@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Get-Outs</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="channel_name">MainChannel</string>
+    <string name="channel_description">TheMainNotificationChannel</string>
+</resources>
