@@ -11,4 +11,6 @@ public class LookAtEventsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_look_at_events);
     }
+
+
 }

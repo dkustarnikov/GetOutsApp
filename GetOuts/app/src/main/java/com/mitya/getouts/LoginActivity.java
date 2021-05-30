@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText passwordEditText;
     private Button loginButon;
 
-    App app;
+    static App app;
     static User user;
 
 
@@ -61,6 +61,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 login(email, password);
                 Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
+
                 startActivity(mainIntent);
             }
         });
@@ -78,6 +79,8 @@ public class LoginActivity extends AppCompatActivity {
                 if (it.isSuccess()) {
                     Log.v(TAG, "Successfully authenticated using an email and password.");
                     user = app.currentUser();
+                    Log.e("USERINFO", app.currentUser().getId());
+
                 } else {
                     Log.e(TAG, it.getError().toString());
                 }

@@ -3,4 +3,5 @@
     <string name="title_activity_maps">Map</string>
     <string name="channel_name">MainChannel</string>
     <string name="channel_description">TheMainNotificationChannel</string>
+    <string name="title_activity_events_maps">Map</string>
 </resources>

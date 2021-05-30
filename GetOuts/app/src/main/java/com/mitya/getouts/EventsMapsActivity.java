@@ -1,12 +1,7 @@
 package com.mitya.getouts;
 
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.FragmentActivity;
 
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -14,42 +9,21 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.GroundOverlayOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class EventsMapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
-    private static final String CHANNEL_ID = "penis";
     private GoogleMap mMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d("TAG", "Entered Oncreate") ;
-        setContentView(R.layout.activity_maps);
+        setContentView(R.layout.activity_events_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
-
-
-        //Wait for 1 second
-        //Send a notification
-
-//        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
-//                .setContentTitle("Dominic Steel")
-//                .setContentText("Hey, I am interested. How should I dress?")
-//                .setSmallIcon(R.drawable.ic_launcher_foreground)
-//                .setPriority(NotificationCompat.PRIORITY_MAX);
-//
-//        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
-
-// notificationId is a unique int for each notification that you must define
-//        notificationManager.notify(1, builder.build());
-
     }
 
     /**

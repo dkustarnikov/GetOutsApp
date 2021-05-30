@@ -62,7 +62,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Time of the event"
-        android:inputType="textPersonName"
+        android:inputType="date|time"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
