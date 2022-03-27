@@ -111,6 +111,7 @@ public class AddEventActivity extends AppCompatActivity {
                             timeEditText.getText().toString());
 
 
+
                     mongoCollection.insertOne(event.eventToDoc()).getAsync(task -> {
                         if (task.isSuccess()) {
                             Log.v("EXAMPLE", "successfully inserted a document with id: " + task.get().getInsertedId());

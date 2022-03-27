@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topDisplayFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".TopDisplayFragment">
+
+    <TextView
+        android:id="@+id/numberDisplayTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#808080"
+        android:fontFamily="@font/calculatorfont"
+        android:includeFontPadding="false"
+        android:padding="10dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textSize="48sp" />
+</FrameLayout>

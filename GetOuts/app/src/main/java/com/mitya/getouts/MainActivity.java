@@ -40,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
         lookAtEventsTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MapsActivity.class));
+                Intent mapsIntent = new Intent (MainActivity.this, MapsActivity.class);
+                startActivity(mapsIntent);
             }
         });
 
